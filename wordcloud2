@@ -1,0 +1,12 @@
+#Source is from lchiffon on github
+require(devtools)
+install_github("lchiffon/wordcloud2")
+library(wordcloud2)
+wordcloud2(data=demoFreq)
+head(demoFreq)
+wordcloud2(demoFreq,color = "random-light",backgroundColor = "black")
+wordcloud2(demoFreq,minRotation = -pi/6,maxRotation = -pi/6,minSize = 10,rotateRatio = 1)
+figPath = system.file("examples/t.png",package = "wordcloud2")
+wordcloud2(demoFreq,figPath = figPath,size = 1.5,color = 'skyblue')
+wordcloud2(demoFreqC, size = 2, fontFamily = "微软黑体",color = "random-light", backgroundColor ="grey")
+letterCloud(demoFreq,word = "star", color = 'random-light', backgroundColor ="black")
