@@ -10,3 +10,4 @@ figPath = system.file("examples/t.png",package = "wordcloud2")
 wordcloud2(demoFreq,figPath = figPath,size = 1.5,color = 'skyblue')
 wordcloud2(demoFreqC, size = 2, fontFamily = "微软黑体",color = "random-light", backgroundColor ="grey")
 letterCloud(demoFreq,word = "star", color = 'random-light', backgroundColor ="black")
+
